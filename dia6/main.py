@@ -5,6 +5,12 @@ def fatorial(n):
     else:
         return n * fatorial(n-1)
     
-numero = int(input("Digite o número que deseja saber o fatorial: "))
+while True:
 
-print("O fatorial de ", numero, " é: ",fatorial(numero))
+    numero = int(input("Digite o número que deseja saber o fatorial: "))
+    print("O fatorial de ", numero, " é: ",fatorial(numero))
+
+    continuar = input("Deseja fazer outra operação? (s/n): ")
+    if (continuar == 'n'):
+        print("Calculadora fatorial encerrada.")
+        break

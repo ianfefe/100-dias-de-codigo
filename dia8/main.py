@@ -4,4 +4,4 @@ def celsiusToFahrenheit(tempC):
 
 temperatura = int(input("Qual a temperatura em graus celsius? "))
 
-print("A temperatura ", temperatura, "C em Fahrenheit é: ", celsiusToFahrenheit(temperatura), "F")
+print(f"A temperatura {temperatura}C em Fahrenheit é: {celsiusToFahrenheit(temperatura)}F")

@@ -1,17 +1,10 @@
-function changeMode(sheet) {
-    document.querySelector('link').setAttribute('href', `${sheet}.css`)
-}
+function changeMode(mode) {
 
-function dayMode() {
-    let light = 'lightStyle'
+    getTema = document.querySelector('.container')
+    getTema.removeAttribute("data-theme")
 
-    document.querySelector('link').removeAttribute('href')
-    changeMode(light)
-}
-
-function nightMode() {
-    let dark = 'darkStyle'
-
-    document.querySelector('link').removeAttribute('href')
-    changeMode(dark)
+    if(mode == 0)
+        getTema.setAttribute("data-theme", "light")
+    else
+        getTema.setAttribute("data-theme", "dark")
 }

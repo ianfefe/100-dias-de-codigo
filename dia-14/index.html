@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia 13 - 100 Dias de Código</title>
-    <link rel="stylesheet" href="lightStyle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <div class="modo">
-        <div class="changer" onclick="dayMode()"></div>
-        <div class="changer2" onclick="nightMode()"></div>
-    </div>
-</header>
+
 <body>
-    
+    <div class="container" data-theme="light">
+        <div class="header">
+            <div class="botoes">
+                <div class="changer" onclick="changeMode(0)"></div>
+                <div class="changer2" onclick="changeMode(1)"></div>
+            </div>
+        </div>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>

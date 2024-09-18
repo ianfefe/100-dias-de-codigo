@@ -1,13 +1,13 @@
-function changeMode(mode) {
+function changeMode() {
 
     getBotao = document.querySelector('.switcher')
     getTema = document.body
     
-    if(mode == 0){
+    if(getTema.getAttribute('data-theme') != "light"){
         getTema.setAttribute("data-theme", "light")
-        getBotao.setAttribute('onclick', "changeMode(1)")
+        getBotao.setAttribute('onclick', "changeMode()")
     }else{
         getTema.setAttribute("data-theme", "dark")
-        getBotao.setAttribute('onclick', "changeMode(0)")
+        getBotao.setAttribute('onclick', "changeMode()")
     }
 }
